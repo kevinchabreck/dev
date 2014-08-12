@@ -9,7 +9,7 @@ Import-Module VirtualEnvWrapper
 Import-Module PSReadLine
 
 # Load posh-git profile
-. "~\Documents\WindowsPowerShell\poshgit_profile.ps1"
+. "~\dev\poshgit_profile.ps1"
 
 # PSReadLine options
 Set-PSReadlineKeyHandler -Key Tab -Function Complete # bash-style autocompletion
