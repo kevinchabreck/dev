@@ -12,7 +12,7 @@ Import-Module PSReadLine
 . "~\dev\poshgit_profile.ps1"
 
 # PSReadLine options
-Set-PSReadlineKeyHandler -Key Tab -Function Complete # bash-style autocompletion
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete # bash-style autocompletion
 Set-PSReadlineKeyHandler -Key Ctrl+k -Function KillLine
 Set-PSReadlineKeyHandler -Key Alt+LeftArrow -Function BeginningOfLine
 
