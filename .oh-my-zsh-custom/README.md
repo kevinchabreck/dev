@@ -1,7 +1,7 @@
 oh-my-zsh-custom
 ================
 
-This repository contains Duprasville specific oh-my-zsh customizations.
+A few zsh/oh-my-zsh customizations. Much thanks to [Duprasville](https://github.com/duprasville/oh-my-zsh-custom).
 
 Getting Started
 ---------------
