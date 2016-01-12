@@ -7,7 +7,7 @@ Getting Started
 ---------------
 
 1. Install Zsh (via [Homebrew](http://brew.sh/))
-```shell
+```bash
 $ brew install zsh
 ```
 2. Clone the oh-my-zsh repository
