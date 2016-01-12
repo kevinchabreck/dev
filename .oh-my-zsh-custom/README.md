@@ -16,6 +16,7 @@ Getting Started
         
 3. Clone this repository and copy the .oh-my-zsh-custom directory to root
 
+		git clone https://github.com/kevinchabreck/dev.git
         cp -r dev/.oh-my-zsh-custom ~/.oh-my-zsh-custom
 
 4. OPTIONAL Backup your existing ~/.zshrc file
