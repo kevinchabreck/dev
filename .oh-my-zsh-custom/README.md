@@ -10,7 +10,7 @@ Getting Started
 
 		$ brew install zsh
 
-2. Clone the oh-my-zsh repository
+2. Clone the [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) repository
 
         $ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
         
