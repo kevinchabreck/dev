@@ -6,13 +6,15 @@ A few zsh/oh-my-zsh customizations. Much thanks to [Duprasville](https://github.
 Getting Started
 ---------------
 
-1. Install Zsh
+1. Install Zsh (via [Homebrew](http://brew.sh/))
+
+		brew install zsh
 
 2. Clone the oh-my-zsh repository
 
         git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
         
-3. Copy this directory to root
+3. Clone this repository and copy the .oh-my-zsh-custom directory to root
 
         cp -r dev/.oh-my-zsh-custom ~/.oh-my-zsh-custom
 
