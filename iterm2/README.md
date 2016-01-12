@@ -14,4 +14,4 @@ Usage
 
 3. Copy `profiles.plist` to `~/Library/Application Support/iTerm2/DynamicProfiles`
 
-		cp profiles.plist ~/Library/Application\ Support/iTerm2/DynamicProfiles
+		$ cp profiles.plist ~/Library/Application\ Support/iTerm2/DynamicProfiles
