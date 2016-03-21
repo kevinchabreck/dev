@@ -15,3 +15,4 @@ PATH=$HOME/bin:$PATH:/opt/local/bin:/opt/local/sbin
 alias ls="ls -lahG"
 alias s="subl"
 alias p="python"
+alias o="open"
