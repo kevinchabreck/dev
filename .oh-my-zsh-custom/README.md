@@ -14,7 +14,7 @@ Getting Started
 
 2. Clone the [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) repository
 
-  $ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+  `$ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh`
 
 3. Clone this repository and symlink the .oh-my-zsh-custom directory to root
 
