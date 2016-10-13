@@ -9,5 +9,4 @@ function copyline {
 	echo -n $CUTBUFFER | pbcopy
 }
 zle -N copyline
-
 bindkey '^[copyline' copyline

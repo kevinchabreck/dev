@@ -3,16 +3,28 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 ZSH_THEME="git-taculous"
 
-# zsh plugins
-plugins=(bundler git)
-
+# oh-my-zsh and plugins
+plugins=(bundler git docker docker-compose python gradle)
 source $ZSH/oh-my-zsh.sh
 
-# path and environment variables
+# path
 PATH=$HOME/bin:$PATH:/opt/local/bin:/opt/local/sbin
+
+# keybinds
+bindkey "^U" backward-kill-line
+bindkey "\\x1b\\x62" emacs-backward-word
+bindkey "\\x1b\\x66" emacs-forward-word
 
 # custom aliases
 alias ls="ls -lahG"
 alias s="subl"
 alias p="python"
 alias o="open"
+alias dkr="docker"
+alias dm="docker-machine"
+alias compose="docker-compose"
+alias ij="idea"
+alias xml="xmllint --format"
+
+# environment variables
+export EDITOR="subl"
