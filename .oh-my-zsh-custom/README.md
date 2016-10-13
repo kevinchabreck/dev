@@ -16,7 +16,6 @@ Getting Started
 
 3. Clone this repository and symlink the .oh-my-zsh-custom directory to root
 
-
         $ git clone https://github.com/kevinchabreck/dev.git
         $ ln -s dev/.oh-my-zsh-custom ~/.oh-my-zsh-custom
 
