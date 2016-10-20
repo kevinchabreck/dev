@@ -1,4 +1,12 @@
 
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
+    fi
+fi
+
 # color prompt
 # PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
 
@@ -19,3 +27,6 @@ set show-all-if-ambiguous on
 # custom aliases
 alias ls="ls -lah --color --group-directories --sort=version"
 alias gs="git status"
+alias p="python"
+alias dkr="docker"
+alias compose="docker-compose"
