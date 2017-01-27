@@ -178,9 +178,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>144 1126 618 519 -125 1050 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>281 1393 796 473 -455 1050 2560 1417 </string>
+	<string>281 1354 796 473 -455 1050 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>321 1572 1263 775 -455 1050 2560 1417 </string>
+	<string>321 1895 570 452 -455 1050 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
