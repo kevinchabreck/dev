@@ -128,7 +128,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Tools</string>
+	<string>~/Projects/dev/iterm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 459}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -176,11 +176,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>577 1548 620 392 -73 1050 1920 1057 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>144 1126 618 519 -125 1050 1920 1057 </string>
+	<string>-21 1046 618 519 -421 1050 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>281 1354 796 473 -455 1050 2560 1417 </string>
+	<string>403 1718 796 473 -455 1050 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>321 1895 570 452 -455 1050 2560 1417 </string>
+	<string>106 1314 1669 1022 -455 1050 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -699,13 +699,6 @@
 					<key>Text</key>
 					<string></string>
 				</dict>
-				<key>0xf702-0x380000</key>
-				<dict>
-					<key>Action</key>
-					<integer>2</integer>
-					<key>Text</key>
-					<string></string>
-				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
 					<key>Action</key>
@@ -742,13 +735,6 @@
 					<string>0x05</string>
 				</dict>
 				<key>0xf703-0x320000</key>
-				<dict>
-					<key>Action</key>
-					<integer>0</integer>
-					<key>Text</key>
-					<string></string>
-				</dict>
-				<key>0xf703-0x380000</key>
 				<dict>
 					<key>Action</key>
 					<integer>0</integer>
@@ -1568,6 +1554,10 @@
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
+	<integer>1</integer>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallUtilitiesPackage</key>
@@ -1584,6 +1574,10 @@
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>474320759.92097902</real>
+	<key>OpenArrangementAtStartup</key>
+	<false/>
+	<key>OpenNoWindowsAtStartup</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1632,7 +1626,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-01-27T14:24:48Z</date>
+	<date>2017-09-05T19:27:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -1650,7 +1644,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.13</string>
+	<string>3.0.15</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
