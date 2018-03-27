@@ -16,7 +16,7 @@ Getting Started
 
 3. Clone this repository
 
-        $ git clone https://github.com/kevinchabreck/dev.git
+        $ git clone git@github.com:kevinchabreck/dev.git
 
 4. symlink `.oh-my-zsh-custom` and `zshrc.zsh-template` into your home directory
 
