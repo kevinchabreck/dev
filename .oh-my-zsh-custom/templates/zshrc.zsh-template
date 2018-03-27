@@ -8,7 +8,7 @@ plugins=(bundler git docker docker-compose python gradle)
 source $ZSH/oh-my-zsh.sh
 
 # path
-PATH=$HOME/bin:$PATH:/opt/local/bin:/opt/local/sbin
+PATH=$HOME/bin:/usr/local/sbin:$PATH:/opt/local/bin:/opt/local/sbin
 
 # keybinds
 bindkey "^U" backward-kill-line

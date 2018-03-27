@@ -10,22 +10,18 @@ Getting Started
 
         $ brew install zsh
 
-2. Clone the [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) repository
+2. Clone the [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) repository into your home directory
 
         $ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
-3. Clone this repository and symlink the .oh-my-zsh-custom directory to root
+3. Clone this repository
 
         $ git clone https://github.com/kevinchabreck/dev.git
-        $ ln -s dev/.oh-my-zsh-custom ~/.oh-my-zsh-custom
 
-4. OPTIONAL Backup your existing ~/.zshrc file
+4. symlink `.oh-my-zsh-custom` and `zshrc.zsh-template` into your home directory
 
-        $ cp ~/.zshrc ~/.zshrc.orig
-
-5. Create a new zsh config by copying the zsh template.
-
-        $ cp ~/.oh-my-zsh-custom/templates/zshrc.zsh-template ~/.zshrc
+		$ ln -s $(pwd)/dev/.oh-my-zsh-custom ~/.oh-my-zsh-custom
+		$ ln -s $(pwd)/dev/.oh-my-zsh-custom/templates/zshrc.zsh-template ~/.zshrc
 
 7. Change shell to zsh
 
