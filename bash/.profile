@@ -22,8 +22,9 @@ bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 
 # completion options
-set completion-ignore-case on
-set show-all-if-ambiguous on
+bind "set completion-ignore-case on"
+bind "set show-all-if-ambiguous on"
+bind "set menu-complete-display-prefix on"
 
 # custom aliases
 if [ "$(uname)" == "Darwin" ]; then
