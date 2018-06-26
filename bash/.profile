@@ -7,6 +7,11 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
 # use git prompt if .git-prompt.sh exists
 if [ -f ".git-prompt.sh" ]; then
     . ".git-prompt.sh"
