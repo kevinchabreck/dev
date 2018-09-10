@@ -1,7 +1,17 @@
 {
+	"added_words":
+	[
+		"whitelisted",
+		"Bitbucket",
+		"bitbucket"
+	],
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	"font_size": 14,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }
