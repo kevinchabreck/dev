@@ -36,7 +36,7 @@ if [ -f ".git-prompt.sh" ]; then
     GIT_PS1_SHOWCOLORHINTS=1
     PROMPT_COMMAND='__git_ps1 "\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\]" "\n% "'
 else
-    PS1='\[\e[1;32m\]\u\[\e[m\]\[\e$HOSTCOLOR@\H\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
+    PS1='\[\e[1;32m\]\u\[\e[m\]\[\e$HOSTCOLOR\]@\H\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
 fi
 
 # history search
