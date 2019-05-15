@@ -57,9 +57,11 @@ bind '"\C-?": backward-kill-line' # ctrl + backspace
 
 # custom aliases
 if [ "$(uname)" == "Darwin" ]; then
-    alias ls="ls -lahG"
+    alias ls="ls -G"
+    alias la="ls -lahG"
 else
-    alias ls="ls -lah --color --group-directories --sort=version"
+    alias ls="ls --color"
+    alias la="ls -lah --color --group-directories --sort=version"
 fi
 alias gs="git status"
 alias p="python"
