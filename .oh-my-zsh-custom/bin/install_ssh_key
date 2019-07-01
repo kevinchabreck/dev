@@ -1,36 +1,23 @@
 #!/bin/bash
+
+# print usage if incorrect number of args
 if [ $# != 2 ]; then
-        echo "Usage: install_ssh_key.sh <host> <username>"
-        exit 1
+  echo 'Usage: install_ssh_key <host> "<public key>"'
+  echo 'example: install_ssh_key my-ssh-host "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDDSlRXSkgQDAhorBF0hqRC7wRc+OuxugOArbXJeo3avjGL5U8bIRHTOWNs/9t2U/d+LlPoFJeJ2TI2bEKp+j8QWMcIDRg8B1DBFtutrn/KCRXdqj12fKOKR2qDcO5SE/sboDlfAGrGJ9UudfJjvLvWq0S9X3G2+fyQT0etYNvovI6tYMX+V6J6Nfv2cHH2txOqIxZwdQIqcFRyni1mOyY1Fa0dbiAcIoWAOeOBEQG8NNUK/gp9wfk9WfxrFvGIqdvGAy3+3Xhdv3F4hy24epV6vhRMP2MI70r+xdhEDk1qVmdal+uNAiTMLelyEmq5mJLcWVjQNPgR0rVkOx0quosEVr4juZOK51qpFqgex/4KE3wHk6KU6rAHlzRx0aUcJm+3Y+OUJgbvsWBOhHzu7a8dteDEH3pbS6hzOZr8kGOJF2woFMMol7e2GNJxxovNrs2vIUq2NBELF7Fuc4FbKIMFzU3Vm/ueCCQbJ/WJTxadnZDbdHYzBzvSBxFWtigzM4wyzHEavv00vo7+V8ME63e3whRocp+B15uBYDBV+vrGjlpplyZ5NytXTIA6eNuwqenps4Y/luPTSvvqErDV0laHPtEfPBdB1AJ/peWW2D9SpTL6qbXcnDWIkc6Kt2689QoF0zT1owigu6Kw903cJpcAFcC8Mh1M/SqOFBnAvcz2PQ== kchabreck@reingold.com"'
+  exit 1
 fi
 
-SSHHOST=$1
-SSHUSER=$2
+host="$1"
+key="$2"
 
-if [ ! -d ~/.ssh ] ; then
-	mkdir ~/.ssh
-fi
-if [ ! -f ~/.ssh/id_dsa ] ; then
-	echo You will now be prompted to generate a SSH key.  Create a key without passwords.
-	ssh-keygen -t dsa
-fi
-
-echo "Writing Local Configuration File"
-
-echo "" >> ~/.ssh/config
-echo "Host "$1 >> ~/.ssh/config
-echo "User "$2 >> ~/.ssh/config
-
-echo "Sending key to host and installing it, prepare to type your password"
-PUB_KEY=`cat ~/.ssh/id_dsa.pub`
-
-ssh $SSHUSER@$SSHHOST "if [ ! -d ~/.ssh ] ; then mkdir ~/.ssh; fi; chmod 700 ~/.ssh; echo '$PUB_KEY' >> ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys"
-if [ $? != 0 ] ; then
-        echo "Unable to install public key"
-        exit 1
-fi
-echo "Testing Key, if you don't see 'it works' below then ... IT DOESN'T."
-ssh $SSHUSER@$SSHHOST "echo it works"
+# remove temporary key file if present
+rm -f /tmp/tmp_key.pub
+# generate temporary key file
+echo "$key" > /tmp/tmp_key.pub
+# add key to host if not already present
+ssh -T $host "grep -q -F \"$key\" ~/.ssh/authorized_keys 2>/dev/null" || ssh-copy-id -f -i /tmp/tmp_key.pub $host
+# remove temporary key file
+rm -f /tmp/tmp_key.pub
 
 exit 0
 ~
