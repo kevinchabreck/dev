@@ -6,9 +6,10 @@ A few zsh/oh-my-zsh customizations. Much thanks to [Duprasville](https://github.
 Getting Started
 ---------------
 
-1. Install Zsh (via [Homebrew](http://brew.sh/))
+1. Install Zsh and Coreutils (via [Homebrew](http://brew.sh/))
 
         $ brew install zsh
+        $ brew install coreutils
 
 1. Clone the [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) repository into your home directory
 
